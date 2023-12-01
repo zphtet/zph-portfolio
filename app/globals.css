@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  .project-card svg {
+    @apply cursor-pointer hover:opacity-80;
+  }
+  .techs p {
+    @apply inline-block pr-3 text-sm;
+  }
+}
+@layer components {
+  .skill-item {
+    @apply w-[calc((100%-20px)/2)] flex items-center gap-3 mt-0;
+  }
+  .btn {
+    @apply px-6 py-2 border-2 border-primary rounded hover:bg-primary hover:text-white;
+  }
+  .project-card {
+    @apply w-[100%] sm:w-[calc((100%-20px)/2)]    md:w-[calc((100%-40px)/3)] p-5 flex flex-col gap-5 bg-primary/20  hover:-translate-y-2 transition-all rounded-md;
+  }
+  .section-title {
+    @apply text-3xl font-bold underline-offset-4 underline decoration-wavy;
+  }
+  .section-title-2 {
+    @apply text-3xl font-bold;
+  }
+}

@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/nav-bar";
 import GlobalThemeProvider from "./components/theme-provider";
+import Footer from "./components/footer";
 // const inter = Inter({ subsets: ["latin"] });
 const roboto = Roboto({
   subsets: ["latin"],
@@ -10,7 +11,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "ZPH-Portfolio",
+  title: "my portfolio | web developer",
   description: "This is my personal portfolio build with next js",
 };
 
@@ -21,10 +22,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
+      <body
+        className={`${roboto.className} bg-primary/5 text-gray-700 dark:text-gray-200  `}
+      >
         <GlobalThemeProvider>
           <Navbar />
           {children}
+          <div className="py-5">
+            <Footer />
+          </div>
         </GlobalThemeProvider>
       </body>
     </html>
