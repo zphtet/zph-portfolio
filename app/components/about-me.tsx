@@ -36,11 +36,11 @@ const AboutMe = () => {
       <div className="flex-1 pt-16 flex justify-center">
         <div>
           <Image
-            className="rounded-md grayscale rotate-6 hover:rotate-0 transition-all hover:grayscale-0"
-            src={"/user.jpg"}
+            className="rounded-md grayscale rotate-6 hover:rotate-0 transition-all hover:[filter:grayscale(60%)]"
+            src={"/assets/my.png"}
             alt="profile pic"
-            width={200}
-            height={200}
+            width={150}
+            height={150}
           />
         </div>
       </div>

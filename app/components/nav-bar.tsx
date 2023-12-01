@@ -1,36 +1,29 @@
 import Image from "next/image";
-import NavLink from "./nav-link";
 import ThemeSwitcher from "./theme-switcher";
+import MobileNav from "./mobile-nav";
+import NavLinks from "./nav-links";
 
 const Navbar = () => {
-  const navLinkData = [
-    {
-      label: "Home",
-      pathname: "/",
-    },
-    {
-      label: "Projects",
-      pathname: "/projects",
-    },
-  ];
   return (
     <header className="max-w-7xl mx-auto  p-5 flex items-center justify-between">
-      <div>
+      <div className="w-[40px] h-[40px] rounded-full  overflow-hidden">
         <Image
-          src={"/user.jpg"}
+          src={"/assets/my.png"}
           alt="my pic"
-          width={35}
-          height={35}
-          className="rounded-full object-cover overflow-hidden"
+          width={40}
+          height={40}
+          className=" object-cover grayscale cursor-pointer"
         />
       </div>
       <nav className="flex items-center gap-5">
-        <div className="flex items-center gap-5">
-          {navLinkData.map((navlink) => {
-            return <NavLink key={navlink.label} {...navlink} />;
-          })}
+        <div className="block sm:hidden">
+          <MobileNav />
         </div>
-        <div>
+
+        <div className="sm:block hidden">
+          <NavLinks />
+        </div>
+        <div className="sm:block hidden">
           <ThemeSwitcher />
         </div>
       </nav>

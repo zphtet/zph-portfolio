@@ -26,8 +26,8 @@ const Experience = () => {
             />
             <div>
               <p>
-                Studied 4th Year (Electronics Engineering ) at Mandalay
-                Technological University - MTU
+                Studied 4<sup>th</sup> Year (Electronics Engineering ) at
+                Mandalay Technological University - MTU
               </p>
               <span className="text-sm">(2016 to 2020)</span>
             </div>

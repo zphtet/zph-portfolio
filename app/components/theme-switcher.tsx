@@ -14,11 +14,21 @@ const ThemeSwitcher = () => {
   return (
     <div className=" grid place-items-center">
       {theme === "light" ? (
-        <button onClick={() => setTheme("dark")}>
+        <button
+          onClick={() => {
+            setTheme("dark");
+            document.getElementById("sheet-close")?.click();
+          }}
+        >
           <MoonStar />
         </button>
       ) : (
-        <button onClick={() => setTheme("light")}>
+        <button
+          onClick={() => {
+            setTheme("light");
+            document.getElementById("sheet-close")?.click();
+          }}
+        >
           <Sun />
         </button>
       )}

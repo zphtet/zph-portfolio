@@ -1,22 +1,23 @@
-import {
-  Sheet,
-  SheetClose,
-  SheetContent,
-  SheetDescription,
-  SheetFooter,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Menu } from "lucide-react";
+import NavLinks from "./nav-links";
+import ThemeSwitcher from "./theme-switcher";
 
 const MobileNav = () => {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <button>Open</button>
+        <button>
+          <Menu />
+        </button>
       </SheetTrigger>
-      <SheetContent>
-        <p> This will be nav items</p>
+      <SheetContent side={"left"} className=" border-none ">
+        <div className=" w-full h-full grid place-items-center ">
+          <div className="flex flex-col gap-5">
+            <NavLinks />
+            <ThemeSwitcher />
+          </div>
+        </div>
       </SheetContent>
     </Sheet>
   );
