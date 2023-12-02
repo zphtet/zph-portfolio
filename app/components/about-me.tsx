@@ -33,7 +33,7 @@ const AboutMe = () => {
           </p>
         </div>
       </div>
-      <div className="flex-1 pt-16 flex justify-center">
+      <div className="flex-1 pt-5 sm:pt-16 flex justify-center">
         <div>
           <Image
             className="rounded-md grayscale rotate-6 hover:rotate-0 transition-all hover:[filter:grayscale(60%)]"

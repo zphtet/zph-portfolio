@@ -1,6 +1,6 @@
 import { ExternalLink, Github } from "lucide-react";
 import React from "react";
-
+import { mplus } from "@/fonts";
 type ProjectCardProps = {
   gitUrl: string;
   liveUrl?: string;
@@ -41,8 +41,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         )}
       </div>
       <div className=" flex-1 flex items-end ">
-        <div className="techs">
-          <span className="italic block text-sm">Built with </span>
+        <div className={`techs ${mplus.className}`}>
+          <span className="italic block text-sm underline decoration-double">
+            Built with{" "}
+          </span>
           {builds.map((tech) => {
             return <p key={tech}>{tech}</p>;
           })}

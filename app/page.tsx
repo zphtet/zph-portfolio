@@ -26,27 +26,27 @@ const Home = () => {
             building fast and accessible products .
           </p>
           <div className="my-5">
-            <a href="/user.jpg">
+            <a href="/assets/zphResume.pdf">
               <button className="btn">Resume</button>
             </a>
           </div>
           <div className="my-7  flex items-center gap-5 text-3xl text-primary">
             <a
-              href="https://google.com"
+              href="https://www.facebook.com/zinpaing.htet.902/"
               target="_blank"
               className="hover:opacity-75"
             >
               <Facebook size={"35px"} />
             </a>
             <a
-              href="https://google.com"
+              href="https://www.linkedin.com/in/zin-paing-htet-49356a17b/"
               target="_blank"
               className="hover:opacity-75"
             >
               <Linkedin size={"35px"} />
             </a>
             <a
-              href="https://google.com"
+              href="https://github.com/zphtet"
               target="_blank"
               className="hover:opacity-75"
             >
@@ -57,11 +57,11 @@ const Home = () => {
       </div>
       <div className=" max-w-5xl mx-auto  p-5 text-[18px] ">
         <AboutMe />
-        <div className="my-20 flex gap-10 sm:gap-28 sm:flex-row flex-col ">
+        <div className=" my-10 sm:my-20 flex gap-10 sm:gap-28 sm:flex-row flex-col ">
           <Skills />
           <Experience />
         </div>
-        <div className="my-20">
+        <div className="my-10 sm:my-20">
           <ContactMe />
         </div>
       </div>
