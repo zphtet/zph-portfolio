@@ -8,7 +8,9 @@ const AboutMe = () => {
         <div className="my-5 space-y-2 text-justify">
           <p className="text-[18px] indent-10 ">
             Hello! My name is{" "}
-            <span className="text-primary">Zin Paing Htet</span> . I am an
+            <span className="text-primary">Zin Paing Htet</span> . I am 23yrs
+            old web developer , currently live in{" "}
+            <span className="text-primary">Yangon</span> , Myanmar. I am an
             experienced web developer with a background in frontend development,
             embarking on my journey to dig deeper into the{" "}
             <span className="text-primary">full stack development </span> .
