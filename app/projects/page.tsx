@@ -6,7 +6,7 @@ const Projects = [
     working: true,
     title: "DevOverflow",
     description:
-      "This is the stack overflow clone . In this project , you can post questions , anwers and comments . And other functionalities like upvote , dovwvote , save questions , filter , pagination  etc .",
+      "This is the stack overflow clone . In this project , you can post questions , anwers and comments . And other functionalities like upvote , downvote , save questions , filter , pagination  etc .",
     builds: ["NextJs", "Typescript", "Clerk", "MongoDB", "Prisma", "ShadcnUi"],
   },
   {
