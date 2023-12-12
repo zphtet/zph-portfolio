@@ -56,7 +56,7 @@ const Projects = [
   },
   {
     gitUrl: "https://github.com/zphtet/wild-oasis",
-    liveUrl: "https://wild-oasis-plum.vercel.app/login",
+    liveUrl: "https://wild-oasis-plum.vercel.app/",
     title: "Wild Oasis",
     description:
       "This is the Hotel cabins  management dashboard . Withe the power of React Query , any changed data will be immediately reflected on the dashboard and other benefits such as caching , prefetching server states.I learned supabase from this project.",
