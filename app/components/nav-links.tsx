@@ -12,7 +12,7 @@ const NavLinks = () => {
     },
   ];
   return (
-    <div className=" flex  sm:flex-row flex-col   items-center gap-4 sm:gap-5">
+    <div className=" flex  sm:flex-row flex-col    items-center gap-4 sm:gap-5">
       {navLinkData.map((navlink) => {
         return <NavLink key={navlink.label} {...navlink} />;
       })}

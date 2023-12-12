@@ -20,7 +20,7 @@ const ThemeSwitcher = () => {
             document.getElementById("sheet-close")?.click();
           }}
         >
-          <MoonStar />
+          <MoonStar size={"20px"} />
         </button>
       ) : (
         <button
@@ -29,7 +29,7 @@ const ThemeSwitcher = () => {
             document.getElementById("sheet-close")?.click();
           }}
         >
-          <Sun />
+          <Sun size={"20px"} />
         </button>
       )}
     </div>

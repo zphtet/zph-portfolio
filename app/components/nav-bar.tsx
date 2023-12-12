@@ -2,10 +2,10 @@ import Image from "next/image";
 import ThemeSwitcher from "./theme-switcher";
 import MobileNav from "./mobile-nav";
 import NavLinks from "./nav-links";
-
+import { robotoMono } from "@/fonts";
 const Navbar = () => {
   return (
-    <header className="max-w-7xl mx-auto  p-5 flex items-center justify-between">
+    <header className="max-w-6xl mx-auto p-5 flex items-center justify-between">
       <div className="w-[40px] h-[40px] rounded-full  overflow-hidden">
         <Image
           src={"/assets/my.png"}
@@ -15,7 +15,7 @@ const Navbar = () => {
           className=" object-cover grayscale cursor-pointer"
         />
       </div>
-      <nav className="flex items-center gap-5">
+      <nav className={`flex items-center gap-5 ${robotoMono.className}`}>
         <div className="block sm:hidden">
           <MobileNav />
         </div>

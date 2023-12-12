@@ -12,9 +12,7 @@ const NavLink: React.FC<NavLinkType> = ({ label, pathname }) => {
   return (
     <Link
       onClick={clickHandler}
-      className={`text-xl  xsm:text-xl hover:text-primary ${
-        active && "text-primary"
-      }`}
+      className={`text-base hover:text-primary ${active && "text-primary"}`}
       href={pathname}
     >
       {label}

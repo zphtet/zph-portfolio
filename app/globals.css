@@ -15,7 +15,7 @@
     @apply w-[calc((100%-20px)/2)] flex items-center gap-3 mt-0;
   }
   .btn {
-    @apply px-6 py-2 border-2 border-primary rounded hover:bg-primary hover:text-white;
+    @apply px-6 py-2 border-2 border-primary rounded   hover:shadow-lg hover:shadow-primary/50 transition-all;
   }
   .project-card {
     @apply w-[100%] sm:w-[calc((100%-20px)/2)]    md:w-[calc((100%-40px)/3)] p-5 flex flex-col gap-5 bg-primary/20  hover:outline hover:outline-primary transition-all rounded-md outline-offset-4;
@@ -25,5 +25,8 @@
   }
   .section-title-2 {
     @apply text-3xl font-bold;
+  }
+  .social-icon {
+    @apply border p-3 rounded-full  hover:shadow hover:shadow-primary/50 transition-all;
   }
 }
