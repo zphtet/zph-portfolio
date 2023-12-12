@@ -2,12 +2,12 @@ import { MailOpen, Phone } from "lucide-react";
 
 const ContactMe = () => {
   return (
-    <div>
-      <div className="text-center">
+    <div data-aos="zoom-in" data-aos-offset={0} data-aos-duration={500}>
+      <div className="">
         <h2 className="section-title-2">Get In Touch</h2>
       </div>
-      <div className="my-5 max-w-3xl mx-auto text-center">
-        <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-5 items-center my-5">
+      <div className="my-5  mx-auto ">
+        <div className="flex flex-col sm:flex-row  gap-3 sm:gap-5  my-5">
           <div className=" flex  items-center gap-3">
             <Phone size={"20px"} />
             <a className="block" href="tel:09774083439">

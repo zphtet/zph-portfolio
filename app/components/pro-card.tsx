@@ -8,6 +8,7 @@ type ProjectCardProps = {
   title: string;
   description: string;
   builds: string[];
+  num?: number;
 };
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -17,9 +18,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
   description,
   builds,
+  num,
 }) => {
   return (
-    <div className="project-card  ">
+    <div
+      className="project-card  "
+      data-aos="flip-left"
+      data-aos-offset="0"
+      data-aos-delay={num! * 300}
+      data-aos-duration={500}
+    >
       <div className="flex items-center gap-5 justify-end ">
         <a href={gitUrl} target="_blank">
           <Github className="text-primary" />

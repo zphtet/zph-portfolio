@@ -3,7 +3,7 @@ import { GraduationCap, Waypoints } from "lucide-react";
 const Experience = () => {
   return (
     <div className="flex-1 space-y-10">
-      <div>
+      <div data-aos="zoom-in" data-aos-duration={500}>
         <h2 className="section-title-2">Experience </h2>
         <div className="my-5">
           <div className="flex gap-5">
@@ -16,7 +16,7 @@ const Experience = () => {
         </div>
       </div>
 
-      <div>
+      <div data-aos="zoom-in" data-aos-duration={500}>
         <h2 className="section-title-2">Education Background </h2>
         <div className="my-5">
           <div className="flex gap-5 ">

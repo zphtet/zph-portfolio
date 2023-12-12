@@ -2,9 +2,16 @@ import Image from "next/image";
 
 const AboutMe = () => {
   return (
-    <div className="flex sm:flex-row flex-col gap-5">
+    <div
+      className="flex sm:flex-row flex-col gap-5"
+      data-aos-duration={500}
+      data-aos="zoom-in-up"
+    >
       <div className="flex-1">
-        <h2 className="section-title">About Me </h2>
+        <h2 className="section-title">
+          About Me
+          <hr className="block" />
+        </h2>
         <div className="my-5 space-y-2 text-justify">
           <p className="text-[18px] indent-10 ">
             Hello! My name is{" "}

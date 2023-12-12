@@ -21,7 +21,10 @@
     @apply w-[100%] sm:w-[calc((100%-20px)/2)]    md:w-[calc((100%-40px)/3)] p-5 flex flex-col gap-5 bg-primary/20  hover:outline hover:outline-primary transition-all rounded-md outline-offset-4;
   }
   .section-title {
-    @apply text-3xl font-bold underline-offset-4 underline decoration-wavy;
+    @apply text-3xl font-bold flex items-center gap-3;
+  }
+  .section-title hr {
+    @apply block  flex-1;
   }
   .section-title-2 {
     @apply text-3xl font-bold;

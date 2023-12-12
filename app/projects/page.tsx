@@ -92,10 +92,13 @@ const ProjectsPage = () => {
   return (
     <div className="p-5 my-5">
       <div className="max-w-5xl  mx-auto  ">
-        <h2 className="section-title">Some Projects I've built </h2>
+        <h2 className="section-title">
+          Some Projects I've built
+          <hr />
+        </h2>
         <div className="my-10 flex gap-5  flex-wrap ">
-          {Projects.map((project) => {
-            return <ProjectCard key={project.title} {...project} />;
+          {Projects.map((project, idx) => {
+            return <ProjectCard key={project.title} {...project} num={idx} />;
           })}
         </div>
       </div>

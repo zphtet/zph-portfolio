@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./components/nav-bar";
 import GlobalThemeProvider from "./components/theme-provider";
 import Footer from "./components/footer";
+import AosProvider from "./Aos";
 // const inter = Inter({ subsets: ["latin"] });
 const roboto = Roboto({
   subsets: ["latin"],
@@ -26,11 +27,13 @@ export default function RootLayout({
         className={`${roboto.className}  text-gray-700 dark:text-gray-200  `}
       >
         <GlobalThemeProvider>
-          <Navbar />
-          {children}
-          <div className="py-5">
-            <Footer />
-          </div>
+          <AosProvider>
+            <Navbar />
+            {children}
+            <div className="py-5">
+              <Footer />
+            </div>
+          </AosProvider>
         </GlobalThemeProvider>
       </body>
     </html>

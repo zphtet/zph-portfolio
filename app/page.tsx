@@ -7,7 +7,12 @@ import { robotoMono } from "@/fonts";
 const Home = () => {
   return (
     <main>
-      <div className="max-w-7xl mx-auto  px-5  sm:px-5 sm:py-7">
+      <div
+        data-aos="zoom-in"
+        data-aos-offset="100"
+        data-aos-duration="500"
+        className="max-w-7xl mx-auto  px-5  sm:px-5 sm:py-7"
+      >
         <div className=" py-[25px] sm:py-[70px] max-w-5xl mx-auto ">
           <p className={`block ${robotoMono.className} text-primary`}>
             Hi ! My name is{" "}
@@ -64,6 +69,8 @@ const Home = () => {
         <AboutMe />
         <div className=" my-10 sm:my-20 flex gap-10 sm:gap-28 sm:flex-row flex-col ">
           <Skills />
+        </div>
+        <div className=" my-10 sm:my-20 flex gap-10 sm:gap-28 sm:flex-row flex-col ">
           <Experience />
         </div>
         <div className="my-10 sm:my-20">

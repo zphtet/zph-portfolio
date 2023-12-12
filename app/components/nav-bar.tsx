@@ -5,7 +5,10 @@ import NavLinks from "./nav-links";
 import { robotoMono } from "@/fonts";
 const Navbar = () => {
   return (
-    <header className="max-w-6xl mx-auto p-5 flex items-center justify-between">
+    <header
+      data-aos="fade-in"
+      className="max-w-6xl mx-auto p-5 flex items-center justify-between"
+    >
       <div className="w-[40px] h-[40px] rounded-full  overflow-hidden">
         <Image
           src={"/assets/my.png"}
